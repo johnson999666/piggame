@@ -24,6 +24,10 @@
         border: 2px solid black;
         position: relative;
       }
+       .big-button {
+        font-size: 20px;
+        padding: 10px;
+    }
     </style>
   </head>
   <body>
@@ -31,7 +35,7 @@
       <img id="dinosaur" src="pig.gif" alt="little dinosaur" height="300px" width="200px">
       <img id="cactus" src="cactus.jpg" alt="Cactus Image">
     </div>
- <button onclick="jump()">Jump</button>
+ <button onclick="jump()" class="big-button">Jump</button>
     <script>
       const dinosaur = document.getElementById('dinosaur');
       const cactus = document.getElementById('cactus');
