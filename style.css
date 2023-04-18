@@ -186,3 +186,53 @@ li {
 .d {
     text-align: center;
 }
+
+ /* the header */
+
+
+
+ .sticky-header {
+    position: sticky;
+    top: 0;
+    background-color: aqua;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 100;
+  }
+  
+  .home-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: aqua;
+    color: purple;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+ /* the footer */
+
+.f {
+    text-align: left;
+    background-color: red;
+}
+.g {
+    text-align: center;
+    background-color: blue;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: blue;
+        
+      
+      
+}
+.h {
+    align-items: center;
+    justify-content: center;
+}
+
