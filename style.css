@@ -1,9 +1,10 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 body {
   
     margin: 0;
     padding: 0;
+    font-family: 'Open Sans', sans-serif;
 
 }
 
@@ -214,25 +215,19 @@ li {
   
  /* the footer */
 
-.f {
-    text-align: left;
-    background-color: red;
-}
-.g {
-    text-align: center;
-    background-color: blue;
-    
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        background-color: blue;
-        
+
       
-      
-}
-.h {
+
+.e {
     align-items: center;
     justify-content: center;
 }
+
+.f {
+    background-color: red;
+    margin: 60px;
+    font-size: 20px;
+}
+
+
 
