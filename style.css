@@ -234,7 +234,7 @@ li {
 .f {
    
     margin: 60px;
-    font-size: 20px;
+    font-size: 50px;
 }
 .z {
     background-color: aqua;
@@ -318,3 +318,24 @@ li {
 .j {
     opacity: 0.5;
 }
+
+/* change color div */
+
+
+.e {
+    padding: 20px;
+}
+  
+  /* Medium-sized screens */
+  @media screen and (min-width: 768px) {
+    .e {
+      padding: 60px;
+    }
+  }
+  
+  /* Large screens */
+  @media screen and (min-width: 1024px) {
+    .e {
+      padding: 150px;
+    }
+  }
