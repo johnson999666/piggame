@@ -252,37 +252,54 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-right: 150px;
-    padding-left: 150px;
-    height: 500px;
+    
+    height: 700px;
+    background-color: red;
 }
 .w {
     text-align: left;
     
-    font-size: 25px; /* adjust to your desired font size */
-  line-height: 50px; /* twice the font size */
+    
+  line-height: 25px; /* twice the font size */
 }
-#t {
+.w {
     font-size: 55px;
 }
 /* Default padding */
-.my-element {
-    padding: 20px;
-  }
+
   
   /* Medium-sized screens */
   @media screen and (min-width: 768px) {
-    .my-element {
-      padding: 30px;
+    .center {
+      padding: 60px;
     }
   }
   
   /* Large screens */
   @media screen and (min-width: 1024px) {
-    .my-element {
-      padding: 50px;
+    .center {
+      padding: 150px;
     }
   }
+  /* Default font size */
+.f {
+    font-size: 16px;
+  }
+  
+  /* Medium-sized screens */
+  @media screen and (min-width: 768px) {
+    .f {
+      font-size: 20px;
+    }
+  }
+  
+  /* Large screens */
+  @media screen and (min-width: 1024px) {
+    .f {
+      font-size: 24px;
+    }
+  }
+  
   
 
 
