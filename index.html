@@ -1,125 +1,63 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <title>Little Pig Game</title>
-    <style>
-      #dinosaur {
-        position: absolute;
-        top: 150px;
-        left: 150px;
-        width: 100px;
-        height: 65px;
-      }
-      #cactus {
-        position: absolute;
-        top: 150px;
-        left: 400px;
-        width: 50px;
-        height: 50px;
-      }
-      #game-box {
-        width: 500px;
-        height: 200px;
-        border: 2px solid black;
-        position: relative;
-      }
-       .big-button {
-        font-size: 20px;
-        padding: 10px;
-    }
-    </style>
-  </head>
-  <body>
-    <div id="game-box">
-      <img id="dinosaur" src="pig.gif" alt="little dinosaur" height="300px" width="200px">
-      <img id="cactus" src="cactus.jpg" alt="Cactus Image">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div class="parent">
+        <h1 id="child1">Lorium forum</h1>
+        
+        <p id="child2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsaomnis libero harum inventore voluptatum, eum repellat quidem assumenda tempore enim eos, voluptatibus voluptas. Aperiam distinctio facilis harum reiciendis et debitis.</p>
+        </div>
+
+    <!--lkdjlkj-->
+
+    <div class="parent1">
+        <h1 id="ch1"> Lorem makes the <br>Internet Computer <br>Unique</h1>
     </div>
- <button onclick="jump()" class="big-button">Jump</button>
-    <script>
-      const dinosaur = document.getElementById('dinosaur');
-      const cactus = document.getElementById('cactus');
-      let positionX = 400;
-      let isJumping = false;
-      let jumpHeight = 200;
-      const jumpSpeed = 5;
-      const cactusSpeed = 3;
-
-      function moveCactus() {
-        positionX -= cactusSpeed;
-        cactus.style.left = positionX + 'px';
-
-        // Check for collision
-        const dinosaurTop = parseInt(dinosaur.style.top);
-        const dinosaurLeft = parseInt(dinosaur.style.left);
-        const cactusTop = parseInt(cactus.style.top);
-        const cactusLeft = parseInt(cactus.style.left);
-
-        if (cactusLeft < dinosaurLeft + dinosaur.width &&
-            cactusLeft + cactus.width > dinosaurLeft &&
-            cactusTop < dinosaurTop + dinosaur.height &&
-            cactusTop + cactus.height > dinosaurTop) {
-          alert('Game Over!');
-        }
-        checkDistance(cactus, dinosaur, dinosaur.width / 2);
-
-        // Respawn cactus if it's out of the screen
-        if (positionX + cactus.width < 0) {
-          positionX = 500;
-        }
-      }
-
-      function moveRight() {
-        const gameBox = document.getElementById('game-box');
-        const gameBoxWidth = parseInt(gameBox.style.width);
-
-        if (positionX + cactus.width < gameBoxWidth) {
-          positionX += 10;
-          cactus.style.left = positionX + 'px';
-        }
-      }
-function jump() {
-  const dino = document.querySelector('#dinosaur');
-  let position = 150;
-  let isJumping = true;
-  let timerId = setInterval(function() {
-    // Move the dino up
-    if (position === 50) {
-      clearInterval(timerId);
-      let downTimerId = setInterval(function() {
-        // Move the dino down
-        if (position === 150) {
-          clearInterval(downTimerId);
-          isJumping = false;
-        } else {
-          position += jumpSpeed;
-          dino.style.top = position + 'px';
-        }
-      }, 20);
-    } else {
-      position -= jumpSpeed;
-      dino.style.top = position + 'px';
-    }
-  }, 20);
-}
 
 
-      function checkDistance(pic1, pic2, threshold) {
-  // Get the distance between the centers of the two pictures
-  const distance = Math.sqrt(
-    Math.pow(pic1.x - pic2.x, 2) + Math.pow(pic1.y - pic2.y, 2)
-  );
 
-  // If the distance is less than the threshold, end the game
-  if (distance < threshold) {
-    endGame();
-  }
-}
+    <!--lkdjlkj-->
+    <div class="flex-container">
+        <div class="flex-item">Flex item 1</div>
+        <div class="flex-item">Flex item 2</div>
+    </div>
+ <!--lkdjlkj-->
 
-function endGame() {
-  // Refresh the browser
-  location.reload();
-}
+
+
+
+ <!--lkdjlkj-->
+    <div class="flex-container">
+        <div class="flex-item">Flex item 1</div>
+        <div class="flex-item">Flex item 2</div>
+    </div>
+ <!--lkdjlkj-->
+
+
+
+
+
+ <div class="parent">
+    <h1 id="child1">Lorium forum</h1>
+    
+    <p id="child2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsaomnis libero harum inventore voluptatum, eum repellat quidem assumenda tempore enim eos, voluptatibus voluptas. Aperiam distinctio facilis harum reiciendis et debitis.</p>
+    </div>
+
+
+ <!--lkdjlkj-->
+    <div class="flex-container">
+        <div class="flex-item">Flex item 1</div>
+        <div class="flex-item">Flex item 2</div>
+    </div>
+ <!--lkdjlkj-->
 
 
 
@@ -127,23 +65,5 @@ function endGame() {
 
 
 
-
-
-
-
-
-      document.addEventListener('keydown', event => {
-  if (event.code === 'ArrowUp' && !isJumping) {
-    jump();
-  }
-});
-
-
-      setInterval(moveCactus, 30);
-    </script>
-  </body>
+</body>
 </html>
-
-
-
-
