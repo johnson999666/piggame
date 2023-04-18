@@ -126,3 +126,21 @@ li {
   height: 100%;
   object-fit: cover;
 }
+
+ /* Each item takes up the full width of the container */
+
+#rounded {
+    border-radius: 10px;
+}
+
+ /* the div text */
+
+ .a {
+    padding: 40px;
+    font-size: 22px;
+    line-height: 2;
+
+ }
+ .b {
+    font-size: 35px;
+ }
