@@ -232,7 +232,7 @@ li {
     font-size: 20px;
 }
 .z {
-    background-color: wheat;
+    background-color: aqua;
 }
 
 /* faded background */
@@ -266,4 +266,10 @@ li {
 
 
 
-/* center div */
+/* change color div */
+
+#color {
+    height: 500px;
+    background-color: aqua;
+}
+/* change color div */
