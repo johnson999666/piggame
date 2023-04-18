@@ -5,6 +5,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
+    
+
 
 }
 
@@ -183,6 +185,7 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: aqua;
 }
 .d {
     text-align: center;
@@ -228,6 +231,39 @@ li {
     margin: 60px;
     font-size: 20px;
 }
+.z {
+    background-color: wheat;
+}
+
+/* faded background */
+
+.y {
+    background: linear-gradient(to bottom, white 0%, blue 100%);
+}
+.x {
+    background: linear-gradient(to bottom, blue 0%, white 100%);
+}
+/* center div */
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 150px;
+    padding-left: 150px;
+    height: 500px;
+}
+.w {
+    text-align: left;
+    padding-right: 50px;
+    padding-left: 50px;
+    font-size: 25px; /* adjust to your desired font size */
+  line-height: 50px; /* twice the font size */
+}
+#t {
+    font-size: 55px;
+}
 
 
 
+/* center div */
