@@ -230,7 +230,7 @@ li {
 }
 
 .f {
-    background-color: red;
+   
     margin: 60px;
     font-size: 20px;
 }
@@ -254,7 +254,7 @@ li {
     justify-content: center;
     
     height: 700px;
-    background-color: red;
+    
 }
 .w {
     text-align: left;
@@ -283,20 +283,20 @@ li {
   }
   /* Default font size */
 .f {
-    font-size: 16px;
+    font-size: 12px;
   }
   
   /* Medium-sized screens */
   @media screen and (min-width: 768px) {
     .f {
-      font-size: 20px;
+      font-size: 16px;
     }
   }
   
   /* Large screens */
   @media screen and (min-width: 1024px) {
     .f {
-      font-size: 24px;
+      font-size: 20px;
     }
   }
   
