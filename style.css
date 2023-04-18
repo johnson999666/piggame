@@ -175,3 +175,14 @@ li {
     }
   }
   
+
+  /* the other list thats bigger */
+
+.c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.d {
+    text-align: center;
+}
